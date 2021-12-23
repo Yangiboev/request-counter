@@ -36,11 +36,7 @@
 
 <summary>Table of Contents</summary>
 
-  
-
 <ol>
-
-  
 
 <li><a  href="#about-the-repo">About The Repo</a></li>
 
@@ -69,13 +65,18 @@
   
 
 This is a simple server which is being develeped by Dilmurod
-
   
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* Our time should be focused on creating something amazing. A project that solves a problem and helps others
 
-* You shouldn't be doing the same tasks over and over.
+* I should element DRY principles to the rest of your life :smile:
 
-* You should element DRY principles to the rest of your life :smile:
+* I assume that  the web server is synchronous, if the other case (asynchronous), then I would have to guard my counter using a mutex or atomic in order to prevent my server from being hit with race-condition bugs. However, I believe that locking would be expensive if we get hit a high-performance scenario.
+
+* After considering a high-performance scenarios that thousands of requests could come in at the very same time, I thought that I need proper synchronization. The concurrency model of golang makes it easy to serialize all accesses to the application's state: no (explicit) mutexes are required.
+
+
+
+
 
 
 <!-- GETTING STARTED -->
@@ -153,6 +154,6 @@ Dilmurod Yangiboev - [@icon_me](dilmurod.yangiboev@gmail.com) - dilmurod.yangibo
 
   
 
-Project Link: [https://github.com/Yangiboev/request-counter](https://github.com/Yangiboev/request-counter)
+Repo Link: [https://github.com/Yangiboev/request-counter](https://github.com/Yangiboev/request-counter)
 
   
